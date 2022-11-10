@@ -26,3 +26,11 @@ h1 {
     border-left: 4px;
     border-right: 4px;
  }
+
+ form{
+   align-items: center;
+ }
+
+ input {
+   width: 100%;
+ }

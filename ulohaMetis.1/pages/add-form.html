@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+    <style>
+        input {
+     width: 100%;
+     padding: 12px 20px;
+     margin: 8px 0;
+     box-sizing: border-box;
+     border: 3px solid #555;
+    }
+
+     textarea {
+     width: 100%;
+     height: 150px;
+     padding: 12px 20px;
+     box-sizing: border-box;
+     border: 2px solid #555;
+     border-radius: 4px;
+     background-color: #f8f8f8;
+     resize: none;
+    }
+    body {
+        background-color: gray;
+    }
+
+
+    </style>
+<body>
+
+    <button>
+        <a href="#" onclick="history.go(-1)">späť</a>
+    </button>
+    <div>
+        <form>
+            <label for="film">názov filmu</label>
+            <input type="text" id="film" name="film" required><br>
+           
+            <label for="otazky">Meno/nick</nick>
+            <input type="text" id="otazky" name="otazky"><br>
+            
+            <label for="mail">zadajte váš mail</label>
+            <input type="mail" id="mail" name="mail" required><br>
+           
+            <label  for="recenzia">vaša recenzia</label>
+            <textarea name="recenzia" id="recenzia" cols="30" rows="10"></textarea> <br>
+            
+            <label for="lastWatch">datum zhliadnutia filmu</label>
+            <input type="date" id="lastWatch" name="lastWatch" placeholder="YYYY-MM-DD" required pattern="[0-9]{4}-[0-9]{2}-[0-9]{2}" title=" YYYY-MM-DD"/>
+                <br>
+            <label for="range">vaše hodnotenie filmu v &percnt;</label>
+            <input type="range" id="range" min="0" max="100" step="10" value="0" oninput="this.nextElementSibling.value = this.value">
+            <output>0</output>
+            
+            <br>
+
+            <label for="type">Vyberte žáner filmu</label>
+        
+            <select name="tpye" id="type">
+                <option value="triller">triller</option>
+                <option value="horor">horor</option>
+                <option value="drama">drama</option>
+                <option value="komedia">komedia</option> 
+            </select>
+            
+            <br>
+            <input type="submit" value="Submit">
+        </form>
+
+    </div>
+    
+</body>
+</html>

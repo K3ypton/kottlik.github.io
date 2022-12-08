@@ -41,6 +41,51 @@ thead{
     
 
 }
+        .tooltip {
+        position: relative;
+        }
+
+        .tooltip .tooltipText {
+        visibility: hidden;
+        width: 300px;
+        height: 100px;
+        background: #2b2b2b;
+        box-shadow: -5px -5px 15px rgba(48, 54, 61, 0.2);
+        color: #fff;
+        text-align: center;
+        border-radius: 5px;
+        padding: 5px 0;
+        line-height: 100px;
+       
+        
+
+        position: absolute;
+        z-index: 1;
+        bottom: 100%;
+        left: 40%;
+        margin-left: -60px;
+        }
+
+        .tooltip:hover .tooltipText {
+        visibility: visible;
+        cursor: pointer;
+        }
+
+        .tooltip:hover{
+            cursor: pointer;
+        }
+
+        .tooltipText img{
+            width: fit-content;
+            height: 100px;
+            display: block;
+            float: left;    
+        }
+        img{
+            width: 15%;
+            margin-left: 25px;
+            height: 20%;
+        }
 
 </style>
    
@@ -72,34 +117,37 @@ thead{
             </thead>   
         </header>
             
-    <div>             
-            <tr>
+    <div>   
+        <div>
+              <tr>
                 <th>1</th>
-                <td>Vykoupení z věznice Shawshank</td>
+                <td class="tooltip">Vykoupení z věznice Shawshank   <span class="tooltipText"><img src="/img/robbins.jpg" alt="">Tim Robbins</span></td>
                 <td>1994</td>
                 <td style="background-color:green">95.3&percnt;</td>
             </tr>
+        </div>          
+            
             <tr>
                 <th>2</th>
-                <td>Forrest gump</td>
+                <td class="tooltip">Forrest gump    <span class="tooltipText"><img src="/img/hanks.jpg" alt="">Tom Hanks</span></td>
                 <td>1994</td>
                 <td style="background-color:green">94.5&percnt;</td>
             </tr> 
             <tr>
                 <th>3</th>
-                <td>Zelena mile</td>
+                <td class="tooltip">Zelena mile     <span class="tooltipText"><img src="/img/hanks.jpg" alt="">Tom Hanks</span></td>
                 <td>1999</td>
                 <td style="background-color:green">92.9&percnt;</td>
             </tr>  
             <tr>
                 <th>4</th>
-                <td>Sedm</td>
+                <td class="tooltip">Sedm    <span class="tooltipText"><img src="/img/pitt.jpg" alt="">Brad Pitt</span></td>
                 <td>1995</td>
                 <td style="background-color:green">92.4&percnt;</td>
             </tr> 
             <tr>
                 <th>5</th>
-                <td>Prelet nad kukaccim hnizdem</td>
+                <td class="tooltip">Prelet nad kukaccim hnizdem     <span class="tooltipText"><img src="/img/nicholson.jpg" alt="">Jack Nicholson</span></td>
                 <td>1975</td>
                 <td style="background-color:green">92.5&percnt;</td>
             </tr> 
